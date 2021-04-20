@@ -23,7 +23,7 @@ public class Filme extends JFrame {
 		
 		JPanel panelFilme = new JPanel();
 		
-		JLabel label = new JLabel("Título: ");
+		JLabel label = new JLabel("TÃ­tulo: ");
 		label.setHorizontalAlignment(JLabel.CENTER);
 		label.setForeground(new Color(0, 0, 0));
 		label.setFont(new Font(null, Font.BOLD, 16));
@@ -46,13 +46,13 @@ public class Filme extends JFrame {
 		panelFilme.add(textFieldNumero2);
 		
 		
-		JLabel label3 = new JLabel("Gênero: ");
+		JLabel label3 = new JLabel("GÃªnero: ");
 		label3.setHorizontalAlignment(JLabel.CENTER);
 		label3.setForeground(new Color(0, 0, 0));
 		label3.setFont(new Font(null, Font.BOLD, 16));
 		panelFilme.add(label3);
 		
-		String[] generos = { "Aventura", "Mistério", "Ação", "Romance" };
+		String[] generos = { "Aventura", "MistÃ©rio", "AÃ§Ã£o", "Romance" };
 		panelFilme.add(new JComboBox<String>(generos));
 		
 		
@@ -71,7 +71,7 @@ public class Filme extends JFrame {
 		panelFilme.add(checkBox);
 		
 		
-		JLabel label4 = new JLabel("Avaliação: ");
+		JLabel label4 = new JLabel("AvaliaÃ§Ã£o: ");
 		label4.setHorizontalAlignment(JLabel.CENTER);
 		label4.setForeground(new Color(0, 0, 0));
 		label4.setFont(new Font(null, Font.BOLD, 16));
@@ -79,7 +79,7 @@ public class Filme extends JFrame {
 		
 		panelFilme.add(new StarRater(5));
 		
-		panelFilme.add(new JLabel(new ImageIcon("C:\\Users\\Lucas\\Pictures\\teste\\Avengers.jpg")));
+		panelFilme.add(new JLabel(new ImageIcon("./src/Avengers.jpg")));
 
 		JButton buttonSalvar = new JButton ("Salvar");	
 		panelFilme.add(buttonSalvar);
